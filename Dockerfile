@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install -y curl
 RUN apt-get autoremove
 
-COPY _output/sandbox /my-echo
+COPY _output/my-echo /my-echo
 
 EXPOSE 1323
 

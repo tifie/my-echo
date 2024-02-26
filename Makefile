@@ -1,4 +1,4 @@
-NAME := sandbox
+NAME := my-echo
 REPOSITORY := tifie/$(NAME)
 TAG := 20240226
 GOOS := linux
