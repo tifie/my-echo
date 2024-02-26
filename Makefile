@@ -1,5 +1,5 @@
 NAME := sandbox
-REPOSITORY := kullovel/$(NAME)
+REPOSITORY := tifie/$(NAME)
 TAG := 20240226
 GOOS := linux
 GOARCH := amd64
@@ -12,10 +12,10 @@ test:
 	go test -v
 
 image-build:
-	docker build -t $(REPOSITORY):$(TAG) .
+	docker build -t ghcr.io/$(REPOSITORY):$(TAG) .
 
 image-push:
-	docker push $(REPOSITORY):$(TAG)
+	docker push ghcr.io/$(REPOSITORY):$(TAG)
 
 clean:
 	rm -rf _output
