@@ -1,6 +1,6 @@
 NAME := sandbox
-REPOSITORY := tifie/$(NAME)
-TAG := 20231108
+REPOSITORY := kullovel/$(NAME)
+TAG := 20240226
 GOOS := linux
 GOARCH := amd64
 
